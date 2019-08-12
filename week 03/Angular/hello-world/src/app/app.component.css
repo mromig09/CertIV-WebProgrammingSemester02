@@ -1,0 +1,19 @@
+body {
+    background-color: #d3dfd1;
+}
+
+h1 {
+    color: #ffa5c1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-right: 28%;
+    padding-left: 28%;
+    color: #feffa7;
+}
