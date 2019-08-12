@@ -84,6 +84,7 @@ class CD extends Product{
 }
 
 let book: Book = new Book("102", 30, "Science Fiction", "Plan 9 From Outer Space");
+
 //let cd: CD = new CD("1", 10);
 let cd: CD = new CD("1", 10, "Country");
 console.log(cd);
