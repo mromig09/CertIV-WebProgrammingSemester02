@@ -1,0 +1,6 @@
+<h1>Create Todo</h1>
+<app-todo-input (newItemEvent)="addTodo($event)"></app-todo-input>
+<div>
+  
+  <app-todo-list [todos]="todos"></app-todo-list>
+</div>

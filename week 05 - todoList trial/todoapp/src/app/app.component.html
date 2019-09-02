@@ -1,0 +1,9 @@
+
+<h1>ToDo List</h1>
+<body>
+    <div style="text-align:center">
+      </div>
+  <app-todoinput (newItemEvent)="addTodo($event)"></app-todoinput>
+    
+  <app-todolist [todo]="todo"></app-todolist>
+</body>
