@@ -1,6 +1,15 @@
-<h1>Create Todo</h1>
-<app-todo-input (newItemEvent)="addTodo($event)"></app-todo-input>
-<div>
-  
-  <app-todo-list [todos]="todos"></app-todo-list>
+<div id="main">
+    <h1>Todo List</h1>
+      <input type="text" id="inputField"
+          placeholder="New Item. . .">
+
+  <app-todo-input (newItemEvent)="addTodo($event)"></app-todo-input>
+  <!-- <div class="data">  
+    <ul class="list-instyled">   
+      <li *ngFor="let todo of todos">{{todo}}</li>  
+    </ul>  
+  </div> -->
+  <div>      
+    <app-todo-list [todos]="todos"></app-todo-list>
+  </div>
 </div>

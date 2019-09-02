@@ -14,9 +14,12 @@ export class AppComponent {
     this.todos.push(new Todo("Add support for adding todos", false));
   }
 
-  addTodo(todo: Todo){
+    
+    addTodo(todo: Todo){
     this.todos.push(todo);
   }
+
+  
 
   title = 'todo-application';
 }
