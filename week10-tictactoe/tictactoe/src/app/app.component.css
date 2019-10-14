@@ -1,6 +1,6 @@
 .game-area {
     margin-top: 25px;
-	width: 450px;
+    width: 450px;
 }
 
 i.material-icons.tick {
@@ -10,3 +10,7 @@ i.material-icons.tick {
 i.material-icons.cross {
     color: red;
 }
+
+.mat-grid-tile {
+    background: rgb(235, 235, 235);
+  }
