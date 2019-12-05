@@ -1,1 +1,6 @@
-<p>planet-create works!</p>
+<div>
+    <input placeholder="name" [(ngModel)]="newName"/>
+    <input placeholder="moons" [(ngModel)]="newMoons"/>
+    <input placeholder="distance from sun" [(ngModel)]="newDistance"/>
+    <button (click)="onClickNew()"> Add Planet</button>
+</div>

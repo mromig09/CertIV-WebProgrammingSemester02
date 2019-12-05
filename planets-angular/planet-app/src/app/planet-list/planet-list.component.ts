@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PlanetService } from '../planet.service';
+import { Planet } from '../planet';
+
 
 @Component({
   selector: 'app-planet-list',
@@ -6,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planet-list.component.css']
 })
 export class PlanetListComponent implements OnInit {
+  Planets: Planet[];
+  Service: PlanetService;
 
-  constructor() { }
+  constructor(service: PlanetService) {
+    this.Service = service;
+   }
 
   ngOnInit() {
   }
 
+  onClickSort() {
+    this.Service.sortPlanets();
+  }
+
+  removePlanetFromList(Planet: Planet) {
+    this.Service.deletePlanet(Planet);
+  }
 }
